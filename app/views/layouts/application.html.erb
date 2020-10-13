@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MarieBegue</title>
+    <title>Marie Bégué</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,10 @@
   </head>
 
   <body>
-    <%= yield %>
+     <%= render 'shared/navbar' %>
+
+      <%= yield %>
+
+    <%= render 'shared/footer' %>
   </body>
 </html>
